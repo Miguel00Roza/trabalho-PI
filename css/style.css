@@ -1,0 +1,84 @@
+:root {
+  --main-bg-color: brown;
+  font-size: clamp(0.9375rem, 0.9119rem + 0.1136vw, 1rem);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    text-decoration: none; /* remove o sublinhado dos links */
+    color: black; /* altera a cor de todos os links das páginas */
+}
+
+body {
+    background: #E5E0D8;
+}
+
+/*---------------------------HEADER---------------------*/
+.nav-bar {
+    width: 100%;
+    padding: 1vw 3vw 1vw 3vw;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px;
+    & ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        & a{
+            color: #51614b;
+        }
+        & a:hover {
+            color: #2b3327;
+            border-bottom: solid #2b3327;
+            padding-bottom: 2px;
+        }
+    }
+
+}
+.logo {
+    width: 80px;
+}
+.logotitle {
+    display: flex;
+    align-items: center;
+    & h1 {
+        padding-left: 15px;
+        font-size: 25px;
+        color: #51614b;
+    }
+}
+
+/*------------------BANNER---------------------*/
+.bannerDiv {
+    padding: 50px;
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-image: url(background/banner.png);
+    display: flex;
+    justify-content: space-between;
+        & .text {
+            width: 50%;
+            & h2 {
+            font-weight: bold;
+            color: #51614b;
+            font-size: 60px;
+        }
+        & p {
+            color: #2b3327;
+            font-weight: bold;
+        }
+        & button {
+            background: #D2AB80;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: white;
+            margin-top: 30px;
+            transition: 300ms;
+        }
+        & button:hover {
+            transition: 300ms;
+            cursor: pointer;
+            background-color: #a17f5b;
+        }
+    }
+}
